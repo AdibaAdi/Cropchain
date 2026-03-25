@@ -1,0 +1,42 @@
+## Comparative Analysis Notes
+
+### Did the Test Engineer output clearly map test coverage to the requirements?
+
+- Clean 1:1 mapping of test cases to all 17 requirements (REQ-001 → REQ-017)
+- Full coverage across both functional (12) and non-functional (5) requirements
+- Direct validation of core Cropchain features: yield prediction, pricing recommendations, logistics visibility, alerts, and traceability
+- Well-structured test cases with requirement IDs, descriptions, and status tracking
+
+### Did the Documentation Engineer output reflect the system design and implementation plan?
+
+- Documentation structure aligns well with the system architecture defined in Experiment 2
+- API documentation matches the expected REST endpoints (User, Crop, Order, AI, Logistics APIs)
+- User roles are consistent with requirements (Farmers, Restaurant Buyers, Grocery Buyers, Logistics Coordinators)
+- Requirement IDs are referenced throughout (e.g., REQ-001, REQ-003), which keeps traceability intact
+
+### Which experiment produced the most presentation-ready artifact?
+
+- Test Engineer output (Experiment 3) is the most presentation-ready
+- Clean tabular format that translates well to slides
+- Includes quantifiable metrics (9 days effort, ~2 test cases/day) useful for discussions
+- Structured cleanly with clear sections and workflow coverage
+
+### Were the outputs coherent across all three experiments?
+
+- Strong Waterfall alignment: Requirements → Design → Implementation → Testing/Documentation
+- Consistent tech stack references (React.js, Node.js, MongoDB across phases)
+- All 6 implementation modules from the Software Engineer are accounted for in testing and documentation
+- Requirement IDs act as a consistent thread across all phases
+
+### Limitations and Weak Spots:
+
+- Test cases are a bit generic and could use more Cropchain-specific depth (e.g., defining “freshness tracking” in measurable terms)
+- No clear strategy for validating AI/ML outputs (accuracy, confidence thresholds, etc.)
+- Tech inconsistency: System Engineer specified PostgreSQL, but implementation used MongoDB
+- Effort estimates seem low (Testing: 9 days, Documentation: 20 days) for a ~1,650 SLOC system
+- Limited coverage of real-world logistics challenges in farm-to-table systems
+- No consideration of seasonal variation or weather impact on predictions
+
+### Summary:
+
+The Waterfall simulation shows strong phase-to-phase consistency with solid requirement traceability throughout. Experiment 3 builds effectively on earlier outputs, with the Test Engineer deliverable being the most presentation-ready. Overall, the system is technically coherent, but adding more domain-specific depth and more realistic effort estimates would make the final result stronger and more convincing.
