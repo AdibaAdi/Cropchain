@@ -318,21 +318,21 @@ System_Engineer:
 # Cropchain System Design Output
 
 ## 1. Design Phase Overview
-The design phase of the Cropchain project focuses on translating the requirements gathered during the requirements phase into a detailed system architecture and design. This phase will encompass the creation of system architecture documents, database designs, and user interface mockups. The design will ensure that the system meets both functional and non-functional requirements, including performance, scalability, and compliance with data protection regulations.
+The design phase of the Cropchain project focuses on translating the requirements gathered during the requirements phase into a structured system architecture. This phase will outline the components, interactions, and data models necessary to build a robust, scalable, and secure farm-to-table supply chain management system. The design will ensure compliance with non-functional requirements, including GDPR, latency, uptime, and user concurrency.
 
 ## 2. Design Deliverables
-- **System Architecture Document**: Outlining the overall architecture, including components and interactions.
-- **Database Design Document**: Detailing the database schema, including tables, relationships, and data types.
-- **Wireframes and UI Mockups**: Visual representations of the user interface for various actors.
-- **API Specifications**: Documenting the interfaces for external integrations and internal services.
+- **System Architecture Document**: Describes the overall architecture, including components and their interactions.
+- **Database Design Document**: Outlines the database schema, including tables, relationships, and data entities.
+- **Wireframes and UI Mockups**: Visual representations of the user interface for different actors.
+- **API Documentation**: Details on the interfaces for external integrations and internal communications.
 
 ## 3. Architecture Components
-- **Web Application Layer**: User interface for farmers, restaurant buyers, grocery buyers, and logistics coordinators.
-- **Application Logic Layer**: Business logic handling user interactions, order processing, yield predictions, and pricing recommendations.
-- **Database Layer**: Relational database management system (RDBMS) for storing user accounts, crop listings, orders, and analytics data.
-- **Analytics Engine**: AI-driven component for yield predictions and pricing recommendations.
-- **Notification Service**: For sending alerts regarding delays, shortages, and spoilage risks.
-- **Security Layer**: Ensuring data protection and compliance with GDPR.
+- **Web Application**: User-facing application for farmers, restaurant buyers, grocery buyers, and logistics coordinators.
+- **Backend Services**: Microservices handling business logic, including user management, crop listings, order processing, yield prediction, and pricing recommendations.
+- **Database**: Relational database (e.g., PostgreSQL) for storing user accounts, crop data, orders, and analytics.
+- **Analytics Engine**: Component for processing data and generating insights on supply and demand trends.
+- **Notification Service**: Manages alerts for all actors regarding delays, shortages, and spoilage risks.
+- **Security Layer**: Implements authentication, authorization, and data encryption to comply with GDPR.
 
 ## 4. Major Actors and Interactions
 - **Farmers**: Onboard to the platform, list crops, receive yield predictions, and manage orders.
@@ -342,80 +342,78 @@ The design phase of the Cropchain project focuses on translating the requirement
 - **Platform Admin**: Monitor system performance and manage user accounts.
 
 ### Interaction Flow
-1. **Farmer Onboarding**: Farmers create accounts and list crops.
-2. **Order Placement**: Restaurant and grocery buyers place orders through the web application.
+1. **Onboarding**: Farmers and buyers create accounts and set up profiles.
+2. **Listing and Ordering**: Farmers list crops, while buyers browse and place orders.
 3. **Yield Prediction**: Farmers receive predictions based on historical data.
 4. **Pricing Recommendations**: Buyers receive recommendations based on market data.
-5. **Shipment Management**: Logistics coordinators manage and track shipments.
-6. **Alerts**: All actors receive alerts for critical events.
+5. **Logistics Management**: Coordinators schedule and track shipments.
+6. **Alerts**: All actors receive notifications regarding system updates.
 
 ## 5. Key Interfaces and Data Entities
 ### Interfaces
 - **User Interface (UI)**: Web-based interface for all actors.
-- **RESTful APIs**: For communication between the front-end and back-end services.
-- **Analytics API**: For accessing yield predictions and pricing recommendations.
+- **RESTful APIs**: For communication between frontend and backend services.
+- **Analytics Dashboard**: For platform admins to visualize data trends.
 
 ### Data Entities
-- **User**: Attributes include user ID, role (farmer, buyer, admin), contact information, and account status.
-- **Crop**: Attributes include crop ID, type, quantity, price, and listing status.
-- **Order**: Attributes include order ID, buyer ID, crop ID, quantity, order status, and timestamps.
+- **User**: Attributes include user ID, role (farmer, buyer, admin), contact information, and authentication details.
+- **Crop**: Attributes include crop ID, type, quantity, price, and farmer ID.
+- **Order**: Attributes include order ID, buyer ID, crop ID, quantity, and status.
 - **Shipment**: Attributes include shipment ID, order ID, logistics details, and tracking status.
-- **Analytics Data**: Historical data for yield predictions and pricing trends.
+- **Alert**: Attributes include alert ID, type, message, and recipient.
 
 ## 6. Support for Yield Prediction, Fair Pricing, Logistics Visibility, Alerts, and Traceability
-- **Yield Prediction**: Implement machine learning algorithms that analyze historical crop data to provide yield forecasts.
-- **Fair Pricing**: Utilize market data and demand-supply algorithms to suggest competitive pricing for crops.
-- **Logistics Visibility**: Real-time tracking of shipments through GPS integration and status updates.
-- **Alerts**: Implement a notification system that sends alerts via email/SMS for critical events (e.g., shipment delays).
-- **Traceability**: Maintain a detailed log of crop movements from farm to table, ensuring compliance with traceability standards.
+- **Yield Prediction**: Utilize machine learning algorithms to analyze historical crop data and generate predictions.
+- **Fair Pricing**: Implement algorithms that consider market trends, seasonality, and supply-demand dynamics.
+- **Logistics Visibility**: Provide real-time tracking of shipments through integration with logistics APIs.
+- **Alerts**: Implement a notification system that sends alerts via email or SMS for critical events.
+- **Traceability**: Maintain a complete history of crop transactions, shipments, and quality checks.
 
 ## 7. Design Tasks and Activities
 1. **System Architecture Design**: Create diagrams and documentation for the overall architecture.
-2. **Database Schema Design**: Define tables, relationships, and constraints for the database.
-3. **API Design**: Specify endpoints, request/response formats, and authentication methods.
-4. **UI Mockups**: Develop wireframes for user interfaces based on user stories.
-5. **Security Design**: Outline security measures for data protection and compliance.
+2. **Database Schema Design**: Define tables, relationships, and constraints.
+3. **API Design**: Outline endpoints, request/response formats, and authentication mechanisms.
+4. **UI/UX Design**: Develop wireframes and mockups for user interfaces.
+5. **Security Design**: Define security protocols and data protection measures.
 
 ## 8. Review Tasks
 - Conduct architecture review sessions with technical leads.
 - Review database design with database administrators.
-- Validate API specifications with developers.
-- Gather feedback on UI mockups from stakeholders.
+- Validate API designs with frontend developers.
+- Gather feedback on UI/UX designs from stakeholders.
 
 ## 9. Rework Tasks
-- Revise architecture based on feedback from reviews.
-- Update database schema as necessary.
-- Modify API specifications based on developer input.
-- Adjust UI designs based on stakeholder feedback.
+- Revise architecture based on feedback.
+- Update database schema and API designs as necessary.
+- Incorporate stakeholder feedback into UI/UX designs.
 
-## 10. Productivity Estimate Using 5 Pages per Day
-- **Total Pages**: Estimated 25 pages for architecture, database design, API specs, and UI mockups.
-- **Productivity Rate**: 5 pages per day.
-- **Estimated Duration**: 25 pages / 5 pages per day = 5 days.
+## 10. Productivity Estimate Using 5 Pages Per Day
+- **Total Design Output**: Estimated at 25 pages (architecture, database, API, UI, security).
+- **Estimated Days**: 25 pages / 5 pages per day = 5 days.
 
 ## 11. Effort Estimate in Days
-- **Total Estimated Effort**: 5 days for design tasks, plus additional time for reviews and rework.
-- **Total Effort Including Reviews and Rework**: 5 days + 2 days (reviews) + 2 days (rework) = 9 days.
+- **Total Effort**: 5 days for design tasks, with additional time allocated for reviews and rework.
+- **Total Estimated Effort**: 10 days (including reviews and rework).
 
 ## 12. Specific Architecture for Non-Functional Requirements
-- **Scalability**: Use cloud-based infrastructure (e.g., AWS, Azure) to dynamically scale resources based on user load.
-- **Latency**: Implement caching strategies (e.g., Redis) to reduce response times to under 2 seconds.
-- **Uptime**: Utilize load balancers and redundant servers to achieve 99.9% uptime.
-- **GDPR Compliance**: Implement data encryption, user consent management, and data access controls to ensure compliance with GDPR.
+- **Scalability**: Use microservices architecture to allow independent scaling of components.
+- **Latency**: Optimize database queries and use caching mechanisms (e.g., Redis) to ensure <2s response time.
+- **Uptime**: Deploy on a cloud platform (e.g., AWS, Azure) with load balancing and failover strategies to achieve 99.9% uptime.
+- **GDPR Compliance**: Implement data encryption, user consent management, and data anonymization techniques.
 
 ## 13. Assumptions, Risks, and Open Questions
 ### Assumptions
-- All stakeholders will provide timely feedback during the design phase.
-- The technology stack chosen will support the required functionalities and performance.
+- All stakeholders will provide timely feedback during design reviews.
+- The technology stack will support the required features and scalability.
 
 ### Risks
-- Potential delays in design reviews may impact the overall project timeline.
-- Changes in regulatory requirements could necessitate additional design adjustments.
+- Potential delays in design approvals may impact the overall project timeline.
+- Changes in regulatory requirements may necessitate additional compliance measures.
 
 ### Open Questions
-- What specific data encryption standards must be adhered to for GDPR compliance?
-- Are there any third-party services that need to be integrated for yield prediction or pricing recommendations?
+- What specific machine learning models will be used for yield prediction?
+- Are there existing logistics partners that need to be integrated into the system?
 
 ---
 
-This structured design output provides a comprehensive overview of the Cropchain system architecture and design, ensuring alignment with project goals and requirements. It is ready for presentation to stakeholders and project teams.
+This structured design output provides a comprehensive overview of the Cropchain system architecture, ensuring alignment with project goals and non-functional requirements. It is ready for presentation to stakeholders and project teams for further discussion and validation.
