@@ -112,3 +112,36 @@ Each folder contains the generated outputs corresponding to its respective SDLC 
 This project demonstrates how AI agents can effectively model and automate the software planning lifecycle using the Waterfall approach. The system highlights the potential of GenAI in improving productivity, structure, and coordination in software engineering workflows.
 
 
+## Section 12: Git Branch Strategy
+
+Run the following commands in your terminal to set up the three-branch structure.
+
+**Branch layout:**
+- `main` — original Phase 1 code (preserved, untouched)
+- `phase1-backup` — safety copy of Phase 1 
+- `phase2` — active working branch for Phase 2
+
+```bash
+# 1. Make sure you are on main and everything is committed
+git checkout main
+git status   # should be clean
+
+# 2. Create a safety backup of Phase 1
+git checkout -b phase1-backup
+git push -u origin phase1-backup
+
+# 3. Go back to main and create the Phase 2 working branch
+git checkout main
+git checkout -b phase2
+git push -u origin phase2
+
+# 4. From now on, all Phase 2 work is committed to the phase2 branch
+# Add your Phase 2 notebooks:
+git add 04_Cropchain_Phase2_Setup_and_Experiment1_Scrum.ipynb
+git commit -m "Phase 2 Exp 1: Team Lead - Scrum setup, Product Backlog, Sprint 1 Plan"
+git push origin phase2
+```
+
+> **Result:** You will have 3 branches total — `main`, `phase1-backup`, `phase2`.  
+> `main` and `phase1-backup` are both safe copies of Phase 1.  
+> `phase2` is where all Phase 2 development happens.
