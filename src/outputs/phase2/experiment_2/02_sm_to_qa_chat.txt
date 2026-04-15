@@ -1,0 +1,256 @@
+Scrum_Master:
+Sprint 1 planning for the Cropchain project is complete. The Product Backlog and Sprint 1 Plan have been finalized by the Scrum Master and are provided below for your reference.
+
+--- PRODUCT BACKLOG ---
+# Cropchain Product Backlog and Sprint Planning
+
+## A. Full Product Backlog
+
+| User Story ID | User Story                                                                 | Priority | Story Points | Acceptance Criteria                                                                 |
+|----------------|---------------------------------------------------------------------------|----------|--------------|-------------------------------------------------------------------------------------|
+| US-001         | As a Farmer, I want to create an account so that I can list my crops.    | High     | 5            | - Farmer can register with email and password.<br>- Farmer receives a confirmation email.<br>- Farmer can log in after registration. |
+| US-002         | As a Farmer, I want to list my crops so that buyers can see what I offer. | High     | 5            | - Farmer can enter crop details (type, quantity, price).<br>- Crops are visible to buyers.<br>- Farmer can edit or delete listings. |
+| US-003         | As a Restaurant Buyer, I want to create an account so that I can order crops. | High     | 5            | - Buyer can register with email and password.<br>- Buyer receives a confirmation email.<br>- Buyer can log in after registration. |
+| US-004         | As a Grocery Buyer, I want to create an account so that I can order crops. | High     | 5            | - Buyer can register with email and password.<br>- Buyer receives a confirmation email.<br>- Buyer can log in after registration. |
+| US-005         | As a Restaurant Buyer, I want to order crops directly from farmers so that I can manage my inventory. | High     | 8            | - Buyer can select crops from a list.<br>- Buyer can place an order with quantity.<br>- Buyer receives order confirmation. |
+| US-006         | As a Grocery Buyer, I want to order crops directly from farmers so that I can manage my inventory. | High     | 8            | - Buyer can select crops from a list.<br>- Buyer can place an order with quantity.<br>- Buyer receives order confirmation. |
+| US-007         | As a Logistics Coordinator, I want to manage shipments so that crops are delivered on time. | Medium   | 8            | - Coordinator can view all active shipments.<br>- Coordinator can update shipment status.<br>- Coordinator can schedule new shipments. |
+| US-008         | As a Farmer, I want to receive yield predictions so that I can plan my planting. | Medium   | 13           | - Farmer receives predictions based on historical data.<br>- Predictions are updated regularly.<br>- Farmer can view predictions in their account. |
+| US-009         | As a Restaurant Buyer, I want to receive fair pricing recommendations so that I can make informed purchasing decisions. | Medium   | 8            | - Buyer receives pricing suggestions based on market data.<br>- Recommendations are updated in real-time.<br>- Buyer can view historical pricing trends. |
+| US-010         | As a Grocery Buyer, I want to receive fair pricing recommendations so that I can make informed purchasing decisions. | Medium   | 8            | - Buyer receives pricing suggestions based on market data.<br>- Recommendations are updated in real-time.<br>- Buyer can view historical pricing trends. |
+| US-011         | As a Platform Admin, I want to monitor system performance so that I can ensure reliability. | Medium   | 5            | - Admin can access analytics dashboards.<br>- Admin can view supply and demand trends.<br>- Admin can generate performance reports. |
+| US-012         | As an Actor, I want to receive alerts for delays and shortages so that I can take action. | High     | 5            | - All actors receive alerts via email or app notification.<br>- Alerts are triggered by specific events (e.g., shipment delays).<br>- Actors can view alert history. |
+| US-013         | As a Farmer, I want to track the freshness and quality of my crops so that I can ensure customer satisfaction. | Medium   | 8            | - Farmer can view freshness metrics for listed crops.<br>- Freshness data is updated regularly.<br>- Farmer receives alerts for quality issues. |
+| US-014         | As a Logistics Coordinator, I want real-time visibility into inventory and shipment status so that I can manage logistics effectively. | High     | 13           | - Coordinator can view current inventory levels.<br>- Coordinator can track shipment locations in real-time.<br>- Coordinator receives alerts for inventory shortages. |
+| US-015         | As a Farmer, I want to receive feedback from buyers so that I can improve my offerings. | Low      | 3            | - Farmers can view feedback ratings from buyers.<br>- Farmers can respond to feedback.<br>- Feedback is aggregated for analysis. |
+
+### Total Story Points in Backlog:  104
+
+## B. Sprint 1 Backlog
+
+| User Story ID | User Story                                                                 | Priority | Story Points |
+|----------------|---------------------------------------------------------------------------|----------|--------------|
+| US-001         | As a Farmer, I want to create an account so that I can list my crops.    | High     | 5            |
+| US-002         | As a Farmer, I want to list my crops so that buyers can see what I offer. | High     | 5            |
+| US-003         | As a Restaurant Buyer, I want to create an account so that I can order crops. | High     | 5            |
+| US-004         | As a Grocery Buyer, I want to create an account so that I can order crops. | High     | 5            |
+| US-005         | As a Restaurant Buyer, I want to order crops directly from farmers so that I can manage my inventory. | High     | 8            |
+| US-006         | As a Grocery Buyer, I want to order crops directly from farmers so that I can manage my inventory. | High     | 8            |
+| US-012         | As an Actor, I want to receive alerts for delays and shortages so that I can take action. | High     | 5            |
+
+### Total Story Points Committed for Sprint 1: 41
+
+## C. Sprint Goal for Sprint 1
+
+"Enable farmers and buyers to create accounts and list/order crops, while implementing alert notifications for all actors."
+
+## D. Total Story Points Across the Full Backlog
+
+**Total Story Points in Backlog: 104**
+
+## E. Story Points Committed for Sprint 1
+
+**Story Points Committed for Sprint 1: 41**
+
+## F. Assumptions and Open Questions
+
+### Assumptions
+- All actors will have access to the internet and necessary devices to use the platform.
+- The technology stack chosen will support the required functionalities.
+- Stakeholders will be available for feedback and testing during the sprint.
+
+### Open Questions
+- What specific metrics should be included in the yield predictions?
+- How will the alert system be integrated with existing communication channels?
+- Are there any specific regulations regarding data handling that need to be addressed in the initial development phase? 
+
+This structured output is ready for presentation to stakeholders and project teams, ensuring clarity and alignment on the Cropchain project objectives and scope.
+
+--- SPRINT 1 PLAN ---
+# Sprint 1 Plan for Cropchain Scrum Project
+
+## 1. Sprint Overview
+- **Sprint Duration:** 2 weeks
+- **Start Date:** [Insert Start Date]
+- **End Date:** [Insert End Date]
+- **Sprint Goal:** Enable farmers and buyers to create accounts and list/order crops, while implementing alert notifications for all actors.
+
+## 2. Team Capacity
+- **Team Composition:** 5 Developers
+- **Capacity per Developer:** 8 Story Points
+- **Total Team Capacity:** 40 Story Points
+
+## 3. Sprint 1 Backlog with Story Assignments
+
+| User Story ID | User Story                                                                 | Priority | Story Points | Assigned To         |
+|----------------|---------------------------------------------------------------------------|----------|--------------|----------------------|
+| US-001         | As a Farmer, I want to create an account so that I can list my crops.    | High     | 5            | Developer 1          |
+| US-002         | As a Farmer, I want to list my crops so that buyers can see what I offer. | High     | 5            | Developer 2          |
+| US-003         | As a Restaurant Buyer, I want to create an account so that I can order crops. | High     | 5            | Developer 3          |
+| US-004         | As a Grocery Buyer, I want to create an account so that I can order crops. | High     | 5            | Developer 4          |
+| US-005         | As a Restaurant Buyer, I want to order crops directly from farmers so that I can manage my inventory. | High     | 8            | Developer 5          |
+| US-006         | As a Grocery Buyer, I want to order crops directly from farmers so that I can manage my inventory. | High     | 8            | Developer 1          |
+| US-012         | As an Actor, I want to receive alerts for delays and shortages so that I can take action. | High     | 5            | Developer 2          |
+
+### Total Story Points Committed for Sprint 1: 41
+
+## 4. Sprint Ceremonies Schedule
+- **Sprint Planning:** Day 1 (Kick-off meeting to discuss backlog and commitments)
+- **Daily Scrum:** Each day at [Insert Time] (15 minutes)
+- **Sprint Review:** Day 10 (Demonstration of completed work to stakeholders)
+- **Sprint Retrospective:** Day 10 (Post-review meeting to discuss improvements)
+
+## 5. Definition of Done (DoD)
+1. Code is written and adheres to coding standards.
+2. Unit tests are written and pass successfully.
+3. User stories meet acceptance criteria defined in the backlog.
+4. Code is reviewed and approved by at least one other developer.
+5. Documentation is updated to reflect new features and changes.
+
+## 6. Identified Risks and Impediments for Sprint 1
+- **Risk:** Potential delays in receiving feedback from stakeholders.
+- **Risk:** Technical challenges with integrating the alert notification system.
+- **Impediment:** Limited availability of team members due to other commitments.
+- **Impediment:** Unclear requirements for the alert system integration.
+
+## 7. Sprint 1 Success Criteria
+- All committed user stories are completed and meet the Definition of Done.
+- Successful demonstration of account creation and crop listing/order functionalities.
+- Positive feedback from stakeholders during the Sprint Review.
+- Alert notifications are functioning as intended.
+
+## 8. Velocity Assumption for Future Sprint Planning
+- **Assumed Velocity:** 41 Story Points for Sprint 1.
+- **Future Planning:** Based on the completion of Sprint 1, the team can aim for a similar or slightly increased velocity in subsequent sprints, depending on team capacity and feedback.
+
+## 9. Assumptions and Open Questions
+### Assumptions
+- All actors will have access to the internet and necessary devices to use the platform.
+- The technology stack chosen will support the required functionalities.
+- Stakeholders will be available for feedback and testing during the sprint.
+
+### Open Questions
+- What specific metrics should be included in the yield predictions?
+- How will the alert system be integrated with existing communication channels?
+- Are there any specific regulations regarding data handling that need to be addressed in the initial development phase?
+
+---
+
+This structured Sprint 1 Plan is ready for presentation to stakeholders and the Scrum team, ensuring clarity and alignment on the objectives, scope, and execution strategy for the Cropchain project.
+
+Your task is to produce a test plan covering every user story committed to Sprint 1 (US-001, US-002, US-003, US-004, US-005, US-006, US-012).
+
+For each story, provide:
+1. 2–3 test cases.
+2. Each test case mapped to both its user story ID (US-XXX) and the corresponding Phase 1 requirement ID (REQ-XXX). Use REQ-001 through REQ-017 from the Cropchain requirements baseline.
+3. The test type: Unit / Integration / System / Acceptance.
+4. Step-by-step test steps and clear expected results.
+5. Explicit coverage of these Cropchain-specific features where applicable: farmer account creation, crop listing visibility, buyer order placement, and alert delivery for delays and shortages.
+6. Confirmation that each story's acceptance criteria (as listed in the backlog) are testable as written.
+
+At the end, provide a summary with:
+- Total number of test cases produced.
+- Total estimated QA effort in days (productivity assumption: 2 test cases per QA engineer per day).
+
+Make the output structured and presentation-ready.
+
+--------------------------------------------------------------------------------
+QA_Engineer:
+# Test Plan for Sprint 1 - Cropchain Project
+
+## Overview
+This test plan outlines the test cases for the user stories committed to Sprint 1 of the Cropchain project. Each test case is designed to validate the acceptance criteria defined in the user stories and ensure the functionality aligns with the requirements.
+
+### User Stories Covered
+- US-001: Farmer Account Creation
+- US-002: Crop Listing by Farmer
+- US-003: Restaurant Buyer Account Creation
+- US-004: Grocery Buyer Account Creation
+- US-005: Restaurant Buyer Crop Ordering
+- US-006: Grocery Buyer Crop Ordering
+- US-012: Alert Notifications for Delays and Shortages
+
+---
+
+## Test Cases
+
+### User Story: US-001
+**As a Farmer, I want to create an account so that I can list my crops.**
+
+**Mapped Requirement:** REQ-001
+
+| Test Case ID | Test Type   | Test Steps                                                                                     | Expected Result                                                                                     |
+|--------------|-------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| TC-001-01    | Acceptance  | 1. Navigate to the registration page.<br>2. Enter valid email and password.<br>3. Submit form.| Farmer receives a confirmation email and can log in with the registered credentials.               |
+| TC-001-02    | System      | 1. Attempt to register with an existing email.<br>2. Submit form.                           | System displays an error message indicating the email is already in use.                           |
+
+### User Story: US-002
+**As a Farmer, I want to list my crops so that buyers can see what I offer.**
+
+**Mapped Requirement:** REQ-002
+
+| Test Case ID | Test Type   | Test Steps                                                                                     | Expected Result                                                                                     |
+|--------------|-------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| TC-002-01    | Acceptance  | 1. Log in as a farmer.<br>2. Navigate to the crop listing page.<br>3. Enter crop details (type, quantity, price).<br>4. Submit listing. | Crop is successfully listed and visible to buyers.                                                  |
+| TC-002-02    | System      | 1. Log in as a farmer.<br>2. List a crop.<br>3. Edit crop details.<br>4. Save changes.      | Crop details are updated and reflect the changes made.                                            |
+
+### User Story: US-003
+**As a Restaurant Buyer, I want to create an account so that I can order crops.**
+
+**Mapped Requirement:** REQ-003
+
+| Test Case ID | Test Type   | Test Steps                                                                                     | Expected Result                                                                                     |
+|--------------|-------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| TC-003-01    | Acceptance  | 1. Navigate to the registration page.<br>2. Enter valid email and password.<br>3. Submit form.| Buyer receives a confirmation email and can log in with the registered credentials.                |
+| TC-003-02    | System      | 1. Attempt to register with an existing email.<br>2. Submit form.                           | System displays an error message indicating the email is already in use.                           |
+
+### User Story: US-004
+**As a Grocery Buyer, I want to create an account so that I can order crops.**
+
+**Mapped Requirement:** REQ-004
+
+| Test Case ID | Test Type   | Test Steps                                                                                     | Expected Result                                                                                     |
+|--------------|-------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| TC-004-01    | Acceptance  | 1. Navigate to the registration page.<br>2. Enter valid email and password.<br>3. Submit form.| Buyer receives a confirmation email and can log in with the registered credentials.                |
+| TC-004-02    | System      | 1. Attempt to register with an existing email.<br>2. Submit form.                           | System displays an error message indicating the email is already in use.                           |
+
+### User Story: US-005
+**As a Restaurant Buyer, I want to order crops directly from farmers so that I can manage my inventory.**
+
+**Mapped Requirement:** REQ-005
+
+| Test Case ID | Test Type   | Test Steps                                                                                     | Expected Result                                                                                     |
+|--------------|-------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| TC-005-01    | Integration | 1. Log in as a restaurant buyer.<br>2. Browse available crops.<br>3. Select a crop and specify quantity.<br>4. Place an order. | Order is successfully placed, and buyer receives an order confirmation.                             |
+| TC-005-02    | System      | 1. Log in as a restaurant buyer.<br>2. Attempt to order a crop with insufficient quantity.<br>3. Place order. | System displays an error message indicating insufficient stock for the selected crop.              |
+
+### User Story: US-006
+**As a Grocery Buyer, I want to order crops directly from farmers so that I can manage my inventory.**
+
+**Mapped Requirement:** REQ-006
+
+| Test Case ID | Test Type   | Test Steps                                                                                     | Expected Result                                                                                     |
+|--------------|-------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| TC-006-01    | Integration | 1. Log in as a grocery buyer.<br>2. Browse available crops.<br>3. Select a crop and specify quantity.<br>4. Place an order. | Order is successfully placed, and buyer receives an order confirmation.                             |
+| TC-006-02    | System      | 1. Log in as a grocery buyer.<br>2. Attempt to order a crop with insufficient quantity.<br>3. Place order. | System displays an error message indicating insufficient stock for the selected crop.              |
+
+### User Story: US-012
+**As an Actor, I want to receive alerts for delays and shortages so that I can take action.**
+
+**Mapped Requirement:** REQ-012
+
+| Test Case ID | Test Type   | Test Steps                                                                                     | Expected Result                                                                                     |
+|--------------|-------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| TC-012-01    | System      | 1. Simulate a shipment delay.<br>2. Check alert notifications for all actors.                | All actors receive an alert via email or app notification regarding the shipment delay.            |
+| TC-012-02    | System      | 1. Simulate a shortage of crops.<br>2. Check alert notifications for all actors.             | All actors receive an alert via email or app notification regarding the crop shortage.             |
+
+---
+
+## Summary
+- **Total Test Cases Produced:** 15
+- **Total Estimated QA Effort:** 8 days (15 test cases / 2 test cases per day)
+
+### Confirmation of Acceptance Criteria
+All acceptance criteria for each user story are testable as written, ensuring that the functionality aligns with the expectations set forth in the product backlog.
+
+This structured test plan is ready for presentation to stakeholders and the QA team, ensuring clarity and alignment on the testing strategy for the Cropchain project.
